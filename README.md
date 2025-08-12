@@ -1,9 +1,15 @@
 # Sales_Tax_Allocation
 1.	Introduction and Problem Definition
+   
 Sales tax allocation analysis between counties and Metropolitan Transit Authorities (MTAs) and Special Purpose Districts (SPDs) forms the basis of my business problem. The objective targets the examination of sales tax distribution between jurisdictions along with reporting temporal patterns to develop financial strategies and policy decisions.
 I selected Python combined with spyder as my development environment for solving this issue. Python enabled me to perform data manipulation using its panda library and visualize my results using its matplotlib and seaborn. The tools enabled me to perform efficient data cleaning operations while quickly seeing trends and detecting vital patterns easily.
 
+Skills demonstrated:
+
+Python, Pandas, Matplotlib, Seaborn, Data Cleaning, Pivot Tables, Time Series Analysis, Statistical Summary, Outlier Detection, Business Insights.
+
 2.	Dataset Description
+   
 A collection of 7 primary variables makes up the dataset I analyzed.
 The data classification includes jurisdiction types which are listed as County, MTA, and SPD.
 The dataset contains three different fields which will be analyzed. First is Name (Categorical)-The name of the jurisdiction.
@@ -38,13 +44,21 @@ The analysis included basic descriptive statistics to calculate mean and median 
 print(dfsales['Payments To Date'].describe())  # Summary statistics for Payments To Date
 
 3. Data Processing Steps
-i.	As a first step I imported the crucial libraries pandas and seaborn along with matplotlib for data processing activities.
-ii.	I inspected the imported data to analyze its structure before performing checks for appropriate column data types.
-iii.	I aggregated the data using jurisdiction types (County, MTA, SPD) to find total Payments To Date numbers and additional relevant statistics which allowed comparison between different types of jurisdictions.
-iv.	I employed pivot tables to conduct both time-based payment analysis at the monthly and quarterly levels.
-v.	The process managed missing values and outliers which emerged during preliminary inspections by replacing missing data with appropriate estimations or applying suitable transformations to deal with outliers.
-vi.	 The investigation of payment patterns through time dedication focused on seasonal influences along with policy alterations by studying data at both monthly and quarterly levels.
+
+     i.	As a first step I imported the crucial libraries pandas and seaborn along with matplotlib for data processing activities.
+
+     ii.	I inspected the imported data to analyze its structure before performing checks for appropriate column data types.
+
+     iii.	I aggregated the data using jurisdiction types (County, MTA, SPD) to find total Payments To Date numbers and additional relevant statistics which allowed                    comparison between different types of jurisdictions.
+
+     iv.	I employed pivot tables to conduct both time-based payment analysis at the monthly and quarterly levels.
+
+      v.	The process managed missing values and outliers which emerged during preliminary inspections by replacing missing data with appropriate estimations or applying              suitable transformations to deal with outliers.
+
+      vi.	 The investigation of payment patterns through time dedication focused on seasonal influences along with policy alterations by studying data at both monthly and             quarterly levels.
+
 4. Descriptive Statistics and Visualizations
+   
 Quarterly Evolution:
 The evaluation of payments progressed through quarters required me to merge data into quarterly segments. Data analysis indicated one or more time periods received increased funding possibly because of seasonal fluctuations or adjustments in policy. These lines of code show the way to generate the quarterly analysis visualization:
 
@@ -76,50 +90,244 @@ The combination of Report Month and Report Period Type measures with additional 
 The attached visual representations confirm these research findings.
 
 5. Visualizations and Insights
-i. Total Payments by Type
-The data visualization displays bar charts that use Matplotlib and Pandas libraries.
+   
+   i. Total Payments by Type
+   
+   The data visualization displays bar charts that use Matplotlib and Pandas libraries.
+   <img width="459" height="338" alt="image" src="https://github.com/user-attachments/assets/7391d00e-b506-49bc-8076-cb52948bdbad" />
 
- 
+
 The counties obtained the greatest collective amount of funding until MTA and SPD received secondary shares.
+
 ii.: Ranking of Allocations
+
 •	Visualization: Seaborn barplot
+
+<img width="567" height="338" alt="image" src="https://github.com/user-attachments/assets/7b278403-b37a-4f0a-9c78-176c994626d6" />
 
  
 Total allocations from counties dominated all other jurisdictions within the ranking system. The visual display of the different jurisdiction values became immediately apparent.
 
 iii: Average Payments by Type
+
 •	Visualization: Seaborn barplot
+<img width="434" height="375" alt="image" src="https://github.com/user-attachments/assets/f4dd6d84-9010-4e3b-a790-d634048306e6" />
+
   
 The average payments across jurisdictions confirmed Counties as the dominant recipient of consistent high funding allocations.
-iv. Evolution Over Time
-The data displays allocations through bar plots which present both quarterly and annual figures.
 
- 
+iv. Evolution Over Time
+
+The data displays allocations through bar plots which present both quarterly and annual figures.
+<img width="655" height="555" alt="image" src="https://github.com/user-attachments/assets/4d94a36c-2eaa-47d3-b4cb-2dbdc0c8b850" />
+
+ <img width="656" height="436" alt="image" src="https://github.com/user-attachments/assets/51121fd0-6050-4c6b-bf98-39caf7ce9fc9" />
+
  
 A sustained upward trend existed in the allocations throughout consecutive years. Consumer spending activities produced higher spending patterns in specific quarters (especially Q4) in the data.
+
 v: Seasonal Patterns
+
 •	Visualization: Line chart and bar chart of Report Month trends
+<img width="611" height="307" alt="image" src="https://github.com/user-attachments/assets/666f413e-af39-4a89-b9e5-63677a82edec" />
 
- 
- 
+<img width="629" height="424" alt="image" src="https://github.com/user-attachments/assets/c6e0084e-4db0-4347-8c41-4baf64956a8e" />
+
 The payment data showed a steady rise with occasional minor peaks and valleys which might show the natural shopping patterns.
-vi. Outlier Detection
-Histogram (Attempted)
-I attempted to display Report Month sales tax allocations through a histogram for distribution analysis. This bar chart displayed uniform value distribution which made all the bars equally visible so I concluded that this method was ineffective for the dataset.
- 
 
+vi. Outlier Detection
+
+Histogram (Attempted)
+
+I attempted to display Report Month sales tax allocations through a histogram for distribution analysis. This bar chart displayed uniform value distribution which made all the bars equally visible so I concluded that this method was ineffective for the dataset.
+ <img width="680" height="435" alt="image" src="https://github.com/user-attachments/assets/852f3de9-068e-4a10-a560-5aeb7205c850" />
 
 6. Conclusion
+
 According to the analysis most of the sales tax allocation funds went to counties resulting in a steady growth pattern throughout the observation period. The data collection maintains perfect compatibility for temporal research and territorial breakdown of information. The majority of recorded variables had categorical data types while Payments To Date functioned as a quantitative measurement together with the features related to date characteristics. The analysis used bar charts together with lines and boxes and scatterplots which brought out essential data patterns and irregularities.
+
 7. Lessons from the Data
+ 
 The assessment revealed that different jurisdictions use varied distribution methods for their sales tax. The payment rate trends in different areas show either steady progression or pronounced fluctuations. Regional economic strategies vary across different jurisdictions because certain  jurisdictions show higher impacts to shifting tax allocation policies.
 
-8.Reflections and Challenges
-Making suitable visual choices beyond raw data presentation was essential because correct decisions helped my communication target. Most graphics displayed at first did not break up clutter or represent the time-window distinction from counties. I performed multiple scale and label adjustment steps as well as formatting modifications until the visuals both clarified the information and improved my analysis goals. This artwork helps me understand the essential role which meaningful analysis and interpretation plays alongside delivering valuable stories to the audience.
+8.  Results and Business Recommendations
+   
+Optimize Seasonal Budgeting:
+
+Since Q4 and certain months show peak allocations, jurisdictions can plan spending or reserves around these cycles to maximize service delivery during high-revenue periods.
+
+Support Lagging Jurisdictions:
+
+Counties dominate allocations, but MTAs and SPDs receive significantly less. Funding models could be reviewed to ensure equitable service quality across all jurisdiction types.
+
+Policy Impact Tracking:
+
+The irregular changes in "Percent Change from Prior Year" suggest certain policy shifts or economic events had significant effects. Creating a monitoring dashboard could help policymakers measure the impact of future changes in near real-time.
+
+Data Quality Improvement:
+
+The presence of outliers and missing values means reporting and data collection methods could be standardized to reduce errors and improve decision-making reliability.
+
+Forecasting for Strategic Planning:
+
+Historical payment patterns indicate trends suitable for predictive modeling. Implementing sales tax revenue forecasts can aid in setting realistic budgets and anticipating revenue shortfalls.
 
 9. Python Code Summary
+    
 The report is supported by Python code written using Pandas, Matplotlib, and Seaborn for:
+
 •	Loading and summarizing data
+
 •	Generating pivot tables
+
 •	Visualizing trends by type, Report Month, quarter, and year
+
 •	Outlier detection through scatter and box plots
+
+Below is the full code used to process the dataset, including steps for data cleaning, visualization, and trend analysis.
+# Step 1: Import Libraries
+
+import pandas as pd
+
+import matplotlib.pyplot as plt
+
+import seaborn as sns
+
+# Step 2: Load the Dataset
+dfsales = pd.read_csv('sales_tax_allocation.csv', index_col='Type')
+
+# Step 3: Initial Data Checks
+print(dfsales.isnull().sum())  # Missing value summary
+print(dfsales.head())          # Quick view of data
+
+# Step 4: Descriptive Statistics
+cols = [
+    'Payments To Date', 'Current Rate', 'Net Payment This Period',
+    'Comparable Payment Prior Year', 'Percent Change From Prior Year',
+    'Previous Payments To Date', 'Percent Change To Date'
+]
+
+summary = pd.DataFrame(columns=cols)
+summary.loc['mean'] = dfsales[cols].mean()
+summary.loc['median'] = dfsales[cols].median()
+summary.loc['std'] = dfsales[cols].std(ddof=0)
+summary.loc['max'] = dfsales[cols].max()
+summary.loc['min'] = dfsales[cols].min()
+print(summary)
+
+# Step 5: Summarizing Sales Tax Data by Type
+
+# Total Payments To Date by Type
+dfsales.pivot_table(values='Payments To Date', index='Type', aggfunc='sum')
+
+# Highest Allocations by Type
+dfsales.pivot_table(values='Payments To Date', index='Type', aggfunc='sum') \
+    .sort_values(by='Payments To Date', ascending=False)
+
+# Average Payments To Date by Type
+pd.set_option('display.precision', 1)
+pivot = dfsales.pivot_table(values='Payments To Date', index='Type', aggfunc='mean')
+pivot.columns = ['Avg Payments To Date per Type']
+pivot
+
+# Step 6: Sales Tax Evolution Over Time
+
+# Create 'Evolve Date' for quarterly and yearly analysis
+dfsales['Evolve Date'] = pd.to_datetime(
+    dfsales['Report Year'].astype(str) + '-' + dfsales['Report Month'].astype(str) + '-01',
+    errors='coerce'
+)
+dfsales['Quarter'] = dfsales['Evolve Date'].dt.to_period('Q').astype(str)
+dfsales['Yearly'] = dfsales['Evolve Date'].dt.to_period('Y').astype(str)
+
+# Quarterly and Yearly evolution summaries
+dfsales.pivot_table(values='Payments To Date', columns='Quarter', aggfunc='sum')
+dfsales.pivot_table(values='Payments To Date', columns='Yearly', aggfunc='sum')
+
+# Step 7: Seasonal Patterns
+monthly_trends = dfsales.pivot_table(values='Payments To Date', index='Report Month', aggfunc='mean')
+print(dfsales.isnull().sum())
+
+# Step 8: Visualization
+
+# Q1: Total Payments To Date by Type
+dfsales.pivot_table(values='Payments To Date', index='Type', aggfunc='sum').plot(kind='bar', figsize=(8, 6))
+plt.title('Total Payments To Date by Type')
+plt.ylabel('Payments To Date')
+plt.xlabel('Type')
+plt.show()
+
+# Q2: Highest Allocations by Type
+df_sales_sum = dfsales.groupby('Type')['Payments To Date'].sum().reset_index()
+sns.barplot(x='Type', y='Payments To Date', data=df_sales_sum.sort_values(by='Payments To Date', ascending=False))
+plt.title('Highest Allocations by Type')
+plt.xlabel('Type')
+plt.ylabel('Payments To Date')
+plt.xticks(rotation=45)
+plt.show()
+
+# Q3: Average Payments To Date per Type
+sns.barplot(x=pivot.index, y='Avg Payments To Date per Type', data=pivot)
+plt.title('Average Payments To Date per Type')
+plt.xlabel('Type')
+plt.ylabel('Avg Payments To Date')
+plt.xticks(rotation=45)
+plt.show()
+
+# Q4: Quarterly Evolution
+quarterly_evolution = dfsales.pivot_table(values='Payments To Date', columns='Quarter', aggfunc='sum')
+quarterly_evolution.plot(kind='bar', figsize=(10, 6))
+plt.title('Sales Tax Evolution by Quarter')
+plt.xlabel('Quarter')
+plt.ylabel('Payments To Date')
+plt.show()
+
+# Q4b: Yearly Evolution
+yearly_evolution = dfsales.pivot_table(values='Payments To Date', columns='Yearly', aggfunc='sum')
+yearly_evolution.plot(kind='bar', figsize=(10, 6))
+plt.title('Sales Tax Evolution by Year')
+plt.xlabel('Year')
+plt.ylabel('Payments To Date')
+plt.show()
+
+# Q5: Monthly Trends (Line + Bar)
+monthly_trends.plot(kind='line', figsize=(10, 6), title='Average Monthly Sales Tax Allocation')
+plt.xlabel('Month')
+plt.ylabel('Average Payments To Date')
+plt.tight_layout()
+plt.show()
+
+monthly_trends.plot(kind='bar', figsize=(10, 6), color='lightblue', edgecolor='black')
+plt.title('Sales Tax Allocation by Month')
+plt.xlabel('Month')
+plt.ylabel('Payments To Date')
+plt.show()
+
+# Step 9: Outlier Detection
+
+# Scatter Plot
+sns.scatterplot(x='Report Month', y='Payments To Date', data=dfsales)
+plt.title('Sales Tax Allocations by Report Month')
+plt.xlabel('Report Month')
+plt.ylabel('Payments To Date')
+plt.show()
+
+# Boxplot
+sns.boxplot(x='Report Month', y='Payments To Date', data=dfsales)
+plt.title('Boxplot to Identify Outliers in Payments To Date')
+plt.xlabel('Report Month')
+plt.ylabel('Payments To Date')
+plt.show()
+
+# Histogram (Distribution)
+monthly_trends.plot(kind='hist', bins=12, figsize=(10, 6), color='lightblue', edgecolor='black')
+plt.title('Distribution of Monthly Sales Tax Allocations')
+plt.xlabel('Payments To Date')
+plt.ylabel('Frequency')
+plt.show()
+
+print(monthly_trends)
+
+# ==========================
+# End of Report
+# ==========================
